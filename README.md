@@ -4,9 +4,7 @@
 
 <div align="center">
   <a href="LICENSE"><img alt="Static Badge" src="https://img.shields.io/badge/Licen%C3%A7a-MIT-blue"></a>
-  <a href="misc/media/Documentação/Versão de Novembro de 2024/Documentação_OpenVoice_Novembro2024.pdf"><img alt="Link para a Docuemtação" src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-darkgreen"></a>
-  <a href="misc/diagramas"><img alt="Link para a pasta de Diagramas" src="https://img.shields.io/badge/Diagramas-darkgreen"></a>
-  <a href="misc/wireframes"><img alt="Link para a pasta de Wireframes" src="https://img.shields.io/badge/Wireframes-darkgreen"></a>
+  <a href="https://github.com/ovapp/docs"><img alt="Link para a Docuemtação" src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-darkgreen"></a>
   <a href="#versão"><img alt="Static Badge" src="https://img.shields.io/badge/Vers%C3%A3o-1.0.0-c6c6c6"></a>
 </div>
 
@@ -22,11 +20,7 @@ A missão desse projeto é oferecer uma plataforma que respeite a liberdade de e
 
 Explore os princípios que fundamentam a criação desta plataforma.
 
-<ul>
-  <li><a href="misc/media/Documentação/Versão de Novembro de 2024/Documentação_OpenVoice_Novembro2024.pdf">Documentação em PDF</a></li>
-  <li><a href="misc/diagramas">Pasta de Diagramas</a></li>
-  <li><a href="misc/wireframes">Pasta de Wireframes</a></li>
-</ul>
+**[Repositório da Documentação](https://github.com/ovapp/docs)**
 
 ## Tecnologias Utilizadas
 
