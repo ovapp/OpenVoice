@@ -2,20 +2,156 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background-color: var(--primary-background);
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+:root {
+  color-scheme: light dark;
+  --primary-background: light-dark(#ffffff, #121212);
+  --primary-text: light-dark(#000000, #ffffff);
+  --primary-secondary-text: light-dark(#ffffff, #000000);
+  --primary-highlight-button: light-dark(#000000, #208c3e);
+  --primary-secondary-button: light-dark(#dddfe0, #d6d6d6);
+}
+
+:root {
+  --base-size-2: 2px;
+  --base-size-4: 4px;
+  --base-size-8: 8px;
+  --base-size-12: 12px;
+  --base-size-16: 16px;
+  --base-size-20: 20px;
+  --base-size-22: 22px;
+  --base-size-24: 24px;
+  --base-size-28: 28px;
+  --base-size-32: 32px;
+  --base-size-36: 36px;
+  --base-size-40: 40px;
+  --base-size-64: 64px;
+}
+
+:root {
+  --button-font-size: 15px;
+}
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+#authform {
+  width: 331px;
+  margin: 0 auto;
+}
+
+#authFormHeader {
+  margin-bottom: var(--base-size-16, 16px);
+  color: var(--primary-text);
+  text-align: center;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+#authHeaderTop {
+  font-size: var(--base-size-24);
+}
+
+#authHeaderBottom {
+  font-size: 14px;
+}
+
+.px-3 {
+  padding-right: var(--base-size-16, 16px) !important;
+  padding-left: var(--base-size-16, 16px) !important;
+}
+
+#buttonFont {
+  font-size: var(--button-font-size);
+  background-color: var(--primary-highlight-button);
+  color: light-dark(#ffffff, #ffffff);
+  cursor: pointer;
+}
+
+#buttonFontSecondary {
+  font-size: var(--button-font-size);
+  background-color: var(--primary-secondary-button);
+  color: light-dark(#000000, #000000);
+  cursor: pointer;
+}
+
+.p-0 {
+  padding: 0 !important;
+  font-size: var(--base-size-12, 12px);
+  color: var(--primary-text);
+}
+
+#ovapp {
+  color: var(--primary-text);
+  bottom: -3px;
+}
+
+#list {
+  color: var(--primary-text);
+}
+
+#languageSelect {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
 }
