@@ -9,11 +9,11 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-package.json*
-package-lock.json*
-postcss.config.mjs*
-eslint.config.mjs*
-components.json*
+package.json
+package-lock.json
+postcss.config.mjs
+eslint.config.mjs
+/.components.json
 
 # testing
 /coverage
@@ -44,7 +44,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.tsconfig.json*
-tailwind.config.ts*
-next.config.ts*
-next-nev.d.ts*
+.tsconfig.json
+tailwind.config.ts
+next.config.ts
+
+#json
+*.json
