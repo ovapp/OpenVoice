@@ -55,10 +55,10 @@ Atualmente, o OpenVoice está na versão <code>1.0.0</code>.
 | :---: | :--- |
 | <img src="https://avatars.githubusercontent.com/u/81395037?v=4" width="100px"> | **Prova de Conceito (POC) por [Felipe Pereira](https://github.com/VerbalThree)** |
 | <img src="https://avatars.githubusercontent.com/u/169792459?v=4" width="100px"> | **[Gustavo Marinho](https://github.com/GusttaviCute)** |
-| <img src="https://avatars.githubusercontent.com/u/168347227?v=4" width="100px"> | **[Ismael Avelino](https://github.com/MaelITK25)** |
-| <img src="images/user.png" width="100px"> | **Laryssa Torres** |
-| <img src="images/user.png" width="100px"> | **Maria Eduarda** |
-| <img src="images/user.png" width="100px"> | **Gustavo Silva** |
+| <img src="https://avatars.githubusercontent.com/u/160237236?v=4" width="100px"> | **[Kauã De Souza Vieira](https://github.com/HSMERCENARIO)** |
+| <img src="https://avatars.githubusercontent.com/u/163528512?v=4" width="100px"> | **[Enzo Silva](https://github.com/EnzoHank)** |
+| <img src="/images/user.png" width="100px"> | **Arthur Henrique** |
+| <img src="/images/user.png" width="100px"> | **Nathiely Lemos** |
 
 ## Licença
 
