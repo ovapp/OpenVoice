@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  outline: none;
+  transition: none;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#google-auth {
+  border: 3px solid #D9D9D9; 
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+
+hr {
+  border: none;
+  border-top: 2px solid #5b5b5b;
+  color: #5b5b5b;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  border-radius: 10px;
+}
+
+hr::after {
+  background: #fff;
+  content: "or";
+  padding: 0 12px;
+  position: relative;
+  top: -14px;
+  font-size: 16px;
+}
+
+#cred-auth {
+  border: 3px solid #000; 
+  box-shadow: 0px 0px 20px -17px;
+  border-radius: 7px;
+  background: #000;
+}
+
+#cred-auth h3 {
+  color: white;
+}
+
+#terms {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+#options {
+  bottom: 35px;
+  position: relative;
+}
+
+.auth-buttons {
+  width: 100%; 
+  height: 50px;
+}
+
+.button-padding {
+  padding: 8px;
+}
+
+.auth-buttons h3 {
+  font-size: 16px;
+}
+
+.texto-estilizado {
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media(width <= 360px){
+  .auth-buttons {
+    width: 100%;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+#custom-input::placeholder {
+  color: black;
+}
+
+#custom-input {
+  outline: none;
+  /* transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1); */
+  box-shadow: 0px 0px 20px -18px;
+}
+
+
+#custom-input:hover {
+  border: 1px solid grey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+
+#custom-input:focus {
+  border: 1px solid grey;
+}
+
+.input-icon {
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 12px;
+  z-index: 10;
+  pointer-events: none;
+  transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease, opacity 0.3s ease; /* Transição suave para o ícone */
+}
+
+
+#custom-input:active ~ .input-icon {
+  transform: translateY(-50%) !important;
+  left: 20px;
+}
+
+#forgot-psw {
+  margin-top: 8px;
+  position: relative;
+  bottom: -6.5rem;
+  font-size: 12px;
+}
+
+.button-signin {
+  font-size: 16px;
+}
+
+#sign-button {
+  margin-top: 32px;
+  background: black;
+  border-radius: 7px;
+}
+
+#hr-notor {
+  position: relative;
+  bottom: -1rem;
+}
+
+#hr-notor::after {
+  content: "";
+  background: transparent;
+}
